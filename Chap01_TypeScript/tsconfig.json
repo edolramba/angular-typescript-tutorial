@@ -1,0 +1,23 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "target": "es5",
+        "noImplicitAny": false,             // 암묵적인 any형 선언은 에러로 표시. 확실히 형을 정하고자 할 경우
+        "experimentalDecorators": false,    // ES7의 decorators를 지원하는가의 여부
+        "sourceMap": true,                  // Source map 파일을 작성한다. 
+        "declaration": false,               // 정의 파일 (.d.ts 파일)을 생성한다.
+        "noEmitOnError": true,              // 오류가 있으면 파일을 출력하지 않음
+        "removeComments" : false,           // 컴파일 시 주석을 없앤다. (true 일 경우)
+        "outDir": "./builder"               // 출력 폴더 지정
+    },
+    "compileOnSave": true,
+    "include": [
+        "./sources/**/*.ts"
+    ],
+    "exclude": [
+        //"./sources/**/*.ts"
+    ]
+}
+
+// tsc --project ./ 로 컴파일한다.
+// map 파일에서 
